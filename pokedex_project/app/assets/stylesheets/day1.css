@@ -45,3 +45,66 @@
 .pokemon-index-list ul {
   display: flex;
 }
+
+.active {
+  position: relative !important;
+}
+
+.pokemon-container {
+  position: absolute;
+  background-color: rgba(0,0,0, 0.8);
+  z-index: 2;
+  height: 330px;
+  width: 300px;
+  padding: 50px;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px black;
+  top: 20%;
+  left: 39%;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+
+.pokemon-container span {
+  float: right;
+  font-size: 30px;
+  margin: -30px;
+  cursor: pointer;
+  color: white;
+}
+
+.pokemon-container span:hover {
+  color: red;
+}
+
+.pokemon-container ul {
+  padding: 0;
+}
+
+.pokemon-container li {
+  list-style: none;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+.pokemon-container img {
+  height: 200px;
+  width: 200px;
+}
+
+.items-container img {
+  height: 25px;
+  width: 25px;
+}
+
+.items-container {
+  position: absolute;
+}
