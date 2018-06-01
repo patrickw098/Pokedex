@@ -6,11 +6,13 @@ const ItemDetail = (props) => {
   }
 
   return (
-    <ul className='items-container'>
-      { props.items.map ((item) => {
-        return (<li key={item.id}><img src={item.image_url}></img></li>);
-      })}
-    </ul>
+    <div className='items-container'>
+      <ul>
+        { props.items.map ((item) => {
+          return (<li key={item.id}><img src={item.image_url}></img></li>);
+        })}
+      </ul>
+    </div>
   );
 };
 

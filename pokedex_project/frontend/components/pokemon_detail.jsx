@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Route } from 'react-router-dom';
+import ItemDetailContainer from './item_detail_container';
 
 class PokemonDetail extends React.Component {
 
@@ -40,6 +42,7 @@ class PokemonDetail extends React.Component {
            <li>Defense: {pokemon.defense}</li>
            <li>Type: {pokemon.poke_type}</li>
            <Link to={`/pokemon/${pokemon.id}/items`}>Show Items</Link>
+           <Route path="/pokemon/:pokemonId/items" component={ItemDetailContainer} />
         </ul>
       </div>
     );

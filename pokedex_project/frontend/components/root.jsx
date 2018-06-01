@@ -11,7 +11,6 @@ const Root = ({ store }) => (
       <div>
         <Route path="/pokemon/:pokemonId" component={PokemonDetailContainer} />
         <Route path="/" component={PokemonIndexContainer} />
-        <Route path="/pokemon/:pokemonId/items" component={ItemDetailContainer} />
       </div>
     </HashRouter>
   </Provider>
